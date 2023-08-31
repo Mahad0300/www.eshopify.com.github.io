@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEW ARRIVALS e-Shopity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <style>
+    @media screen and (max-width:767px) {
+
+      .navbar-toggler {
+        margin-top: -11%;
+        margin-left: 78%;
+      }
+
+      .brandlogo {
+        margin-top: 5% !important;
+        height: 3vh !important;
+      }
+
+    }
+
+    @media screen and (min-width:767px) and (max-width:1023px) {
+      .navbar {
+        margin-left: 7% !important;
+      }
+
+      .navbar-toggler {
+        margin-top: -11% !important;
+        margin-left: 85%;
+      }
+
+      .d-block {
+        height: 30vh !important;
+      }
+
+      .shop {
+        margin-top: -35px !important;
+      }
+
+      .now {
+        margin-top: -35px !important;
+      }
+
+      #container {
+        margin-left: 5%;
+        background-color: rgb(255, 233, 236);
+        width: 90%;
+        height: 25.5vh !important;
+        text-align: center;
+        margin-top: 2%;
+      }
+
+      #box1 {
+        display: flex;
+        justify-content: center;
+        height: 22vh !important;
+      }
+    }
+
+    @media screen and (min-width:1024px) {
+      #box1 {
+        display: flex;
+        justify-content: center;
+        height: 60vh !important;
+      }
+    }
+
+
+
+    a {
+      color: black !important;
+      text-decoration: none !important;
+      font-size: 13px;
+    }
+
+    a:hover {
+      color: rgb(255, 208, 0) !important;
+      text-decoration: none !important;
+    }
+
+    .brandlogo {
+      display: flex;
+      justify-content: center;
+      margin-top: 2%;
+      height: 5vh;
+    }
+
+    /* NAVBAR  */
+
+    .navbar {
+      /* font-weight: 700; */
+      font-family: alata sans-serif;
+    }
+
+    /* login signup  */
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+
+    .container {
+      margin-top: 10% !important;
+      position: relative;
+      max-width: 430px;
+      width: 100%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .container .forms {
+      width: 200%;
+      display: flex;
+      height: 440px;
+      align-items: center;
+      transition: height 0.4s ease;
+    }
+
+    .container .form {
+      width: 50%;
+      padding: 30px;
+      border-radius: 12px;
+      background: #fff;
+      transition: margin-left 0.36s ease;
+    }
+
+    .container.active .login {
+      margin-left: -50%;
+      opacity: 0;
+      transition: margin-left 0.36s ease, opacity 0.3s ease;
+    }
+
+    .container .signup {
+      opacity: 0;
+      transition: opacity 0.18s ease;
+    }
+
+    .container.active .signup {
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    .container.active .forms {
+      height: 600px;
+    }
+
+    .container .form .title {
+      position: relative;
+      font-size: 27px;
+      font-weight: 600;
+    }
+
+    .form .title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 30px;
+      background-color: #4070f4;
+      border-radius: 25px;
+    }
+
+    .form .input-field {
+      position: relative;
+      height: 50px;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .input-field input {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      padding: 0 35px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      border-bottom: 2px solid #ccc;
+      border-top: 2px solid transparent;
+      transition: border-bottom-color 0.4s ease;
+    }
+
+    .input-field input:is(:focus, :valid) {
+      border-bottom-color: #4070f4;
+    }
+
+    .input-field i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+      font-size: 23px;
+      transition: color 0.4s ease;
+    }
+
+    .input-field input:is(:focus, :valid)~i {
+      color: #4070f4;
+    }
+
+    .input-field i.icon {
+      left: 0;
+    }
+
+    .input-field i.showHidePw {
+      right: 0;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .form .checkbox-text {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .checkbox-text .checkbox-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox-content input {
+      margin: 0 8px -2px 4px;
+      accent-color: #4070f4;
+    }
+
+    .form .text {
+      color: #333;
+      font-size: 14px;
+    }
+
+    .form a.text {
+      color: #4070f4;
+      text-decoration: none;
+    }
+
+    .form a {
+      text-decoration: none;
+    }
+
+    .form a:hover {
+      text-decoration: underline;
+    }
+
+    .form .button {
+      margin-top: 35px;
+    }
+
+    .form .button input {
+      border: none;
+      color: #000;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border-radius: 6px;
+      background-color: #FF9900;
+      cursor: pointer;
+      transition: all 0.6s ease;
+    }
+
+    .button input:hover {
+      background-color: rgb(255, 208, 0);
+    }
+
+    .form .login-signup {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    /* popup  */
+
+    .popup {
+      width: 400px;
+      background: #fff;
+      border-radius: 6px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%) scale(0.1);
+      text-align: center;
+      padding: 0 30px 30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s;
+    }
+
+    .open-popup {
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .popup img {
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba((0, 0, 0, 0.2));
+    }
+
+    .popup h2 {
+      font-size: 38px;
+      font-weight: 500;
+      margin: 30px 0 10px;
+    }
+
+    .popup button {
+      width: 100%;
+      margin-top: 50px;
+      padding: 10px 0;
+      background: #FF9900;
+      color: #fff;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      border-radius: 40px;
+      box-shadow: 0 5px 5px rgba((0, 60, 120, 0.6));
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- brandlogo  -->
+
+  <div class="brandlogo">
+    <img src="image/brandlogo.png" alt="">
+  </div>
+
+
+
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">NEW ARRIVALS</a>
+
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="women.html">WOMEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="men.html">MEN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="girl.html">GIRL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="boy.html">BOY</a>
+        </li>
+
+
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <div class="container">
+    <div class="forms">
+
+      <div class="form login">
+        <span class="title">Login</span>
+        <form action="#">
+
+          <div class="input-field">
+            <input type="text" placeholder="Enter your email" required>
+            <i class="uil uil-envelope"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="password" class="password" placeholder="Enter your password" required>
+            <i class="uil uil-lock icon"></i>
+            <i class="uil uil-eye-slash showHidePw"></i>
+          </div>
+
+          <div class="checkbox-text">
+            <div class="checkbox-content">
+              <input type="checkbox" id="logCheck">
+              <label for="logCheck" class="text">Remember me</label>
+            </div>
+            <a href="#" class="text">Forgot password?</a>
+          </div>
+
+          <div class="input-field button">
+            <input type="button" value="Login Now">
+          </div>
+
+        </form>
+
+        <div class="login-signup">
+          <span class="text">Not a member?
+            <a href="#" class="text signup-link">Signup now</a>
+          </span>
+        </div>
+      </div>
+
+
+      <!-- signup  -->
+
+      <div class="form signup">
+        <span class="title">Registration</span>
+
+        <form action="#" name="fm" method="get">
+          <table class="table">
+
+            <tr>
+              <div class="input-field">
+                <input type="text" placeholder="Enter your name" id="txtname" name="txtname" required>
+                <i class="uil uil-user"></i>
+              </div>
+            </tr>
+
+            <tr>
+              <div class="input-field">
+                <input type="text" placeholder="Enter your email" id="txtemail" name="txtemail" required>
+                <i class="uil uil-envelope"></i>
+                <span id="lb3"></span>
+              </div>
+            </tr>
+
+            <tr>
+              <div class="input-field">
+                <input type="password" placeholder="Create a password" id="txtpass" name="txtpass" required>
+                <i class="uil uil-lock icon"></i>
+                <span id="lb2"></span>
+              </div>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="input-field button">
+                  <input type="button" value="Register Now" onclick="validate()">
+                </div>
+              </td>
+            </tr>
+
+          </table>
+        </form>
+
+        <!-- POPUP  -->
+
+        <div class="popup" id="popup">
+          <img src="images/tick.png" alt="">
+          <h2>Thank You!</h2>
+          <p>You're Sign Up.A Confirmation letter has been sent to your email. Check your inbox. </p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+
+        <div class="login-signup">
+          <span class="text">Already have an account?
+            <a href="#" class="text login-link">Login now</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</body>
+
+</html>
+
+
+<script>
+  const container = document.querySelector(".container"),
+    pwShowHide = document.querySelectorAll(".showHidePw"),
+    pwFields = document.querySelectorAll(".password"),
+    signup = document.querySelector(".signup-link"),
+    login = document.querySelector(".login-link");
+
+  pwShowHide.forEach(eyeIcon => {
+    eyeIcon.addEventListener("click", () => {
+      pwFields.forEach(pwField => {
+        if (pwField.type === "password") {
+          pwField.type = "text";
+
+          pwShowHide.forEach(icon => {
+            icon.classList.replace("uil-eye-slash", "uil-eye");
+          })
+        } else {
+          pwField.type = "password";
+
+          pwShowHide.forEach(icon => {
+            icon.classList.replace("uil-eye", "uil-eye-slash");
+          })
+        }
+      })
+    })
+  })
+
+  signup.addEventListener("click", () => {
+    container.classList.add("active");
+  })
+
+  login.addEventListener("click", () => {
+    container.classList.remove("active");
+  })
+
+
+
+
+  var popup = document.getElementById("popup");
+  function validate() {
+    var username = fm.txtname.value;
+    var pass = fm.txtpass.value;
+    var email = fm.txtemail.value;
+    if (username.length == 0) {
+      // document.getElementById("txtname").style.borderColor = "gray";
+    }
+    else {
+      document.getElementById("txtname").style.borderColor = "black";
+    }
+    //-------------------------------- 
+    var pattern_pass = /^[a-zA-Z]\w{3,14}$/;
+    if (pass.length == 0) {
+      // document.getElementById("txtpass").style.borderColor = "gray";
+    }
+
+    else if (pattern_pass.test(pass) == false) {
+      document.getElementById("lb2").innerHTML = "1st letter must be alphabet and min length is 4 max is 14";
+    }
+
+    else {
+      document.getElementById("lb2").innerHTML = "";
+      document.getElementById("txtpass").style.borderColor = "black";
+    }
+    //--------------------------------
+    var pattern_email = /^([A-Za-z0-9_\-\.])+\@([A-Za-z])+\.([A-Za-z]{2,3})$/
+    if (pass.length == 0) {
+      // document.getElementById("txtemail").style.borderColor = "gray";
+    }
+    else if (pattern_email.test(email) == false) {
+      document.getElementById("lb3").innerHTML = "invalid email";
+    }
+    else {
+      document.getElementById("lb3").innerHTML = "";
+      document.getElementById("txtemail").style.borderColor = "black";
+    }
+    if (username.length != 0 && pattern_pass.test(pass) == true && pattern_email.test(email) == true) {
+      // window.location.href = "thankyou.html";
+      popup.classList.add("open-popup");
+
+    }
+  }
+  function closePopup() {
+    popup.classList.remove("open-popup");
+  }
+
+</script>
