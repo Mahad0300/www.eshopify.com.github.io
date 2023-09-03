@@ -1,0 +1,481 @@
+@media screen and (max-width:767px) {
+    .d-block {
+        height: 27vh !important;
+    }
+
+    .navbar-toggler {
+        margin-top: -11%;
+        margin-left: 78%;
+    }
+
+    .brandlogo {
+        margin-top: 5% !important;
+        height: 3vh !important;
+    }
+
+    /* .container-fluid {
+        display: none;
+    } */
+
+    .footer {
+        background-color: rgb(248, 247, 247);
+        height: 50vh;
+    }
+
+    #frag1,
+    #frag2,
+    #frag3,
+    #frag4 {
+        width: 50% !important;
+    }
+
+    #frag5 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .navbar {
+        margin-left: 7% !important;
+    }
+
+    .navbar-toggler {
+        margin-top: -11% !important;
+        margin-left: 85%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #box1 {
+        display: flex;
+        justify-content: center;
+        height: 60vh !important;
+    }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    background-color: whitesmoke;
+    padding: 3px;
+}
+
+.navone {
+    display: flex;
+    margin-left: 10% !important;
+}
+
+.navone,
+a {
+    margin-left: 10px;
+}
+
+.nav {
+    justify-content: center;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+    font-size: 13px;
+}
+
+a:hover {
+    color: rgb(255, 208, 0) !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+}
+
+.flag {
+    width: 20px;
+}
+
+.brandlogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    height: 5vh;
+}
+
+/* NAVBAR  */
+
+.navbar {
+    font-weight: 500;
+    font-family: alata sans-serif;
+}
+
+
+/* display  */
+.card {
+    width: 100% !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img {
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: -100%;
+    position: absolute;
+    background: #0000003b;
+    backdrop-filter: blur(5px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s ease-in-out;
+}
+
+.card:hover .card-body {
+    bottom: 0;
+}
+
+.card-title {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    /* text-transform: uppercase; */
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-btn {
+    color: black;
+    background: white;
+    width: 120px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.card-btn:hover{
+    color: white !important;
+    background-color: #fc9f13;
+}
+/* card  */
+
+#card {
+    margin: 2%;
+}
+
+.b-1 {
+    width: 50%;
+    border: 1px solid black;
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95%;
+}
+
+.b-1:hover {
+    background-color: black;
+    color: white;
+}
+
+#us {
+    background: url(boyimage/unstitched.png);
+    width: 350px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+#fw {
+    background: url(boyimage/boyfootwear.png);
+    width: 350px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+
+}
+
+#kp {
+    background: url(boyimage/kurtapajama.png);
+    width: 350px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+
+}
+
+
+/* FRAGRANCE CARD  */
+
+#fraghead {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+#frag1 {
+    /* border: 1px solid black; */
+    width: 20%;
+}
+
+#frag2 {
+    /* border: 1px solid black; */
+    width: 20%;
+}
+
+#frag3 {
+    /* border: 1px solid black; */
+    width: 20%;
+}
+
+#frag4 {
+    /* border: 1px solid black; */
+    width: 20%;
+}
+
+#frag5 {
+    /* border: 1px solid black;s */
+    width: 20%;
+}
+
+.fragimage1 {
+    display: flex !important;
+    justify-content: center !important;
+    height: 300px;
+    background: url(boyimage/frag1.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.fragimage1:hover {
+    background: url(boyimage/frag11.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+
+.fragimage2 {
+    display: flex !important;
+    justify-content: center !important;
+    height: 300px;
+    background: url(boyimage/frag2.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.fragimage2:hover {
+    background: url(boyimage/frag22.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+
+.fragimage3 {
+    display: flex !important;
+    justify-content: center !important;
+    height: 300px;
+    background: url(boyimage/frag3.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.fragimage3:hover {
+    background: url(boyimage/frag33.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+
+.fragimage4 {
+    display: flex !important;
+    justify-content: center !important;
+    height: 300px;
+    background: url(boyimage/frag4.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.fragimage4:hover {
+    background: url(boyimage/frag44.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+
+.fragimage5 {
+    display: flex !important;
+    justify-content: center !important;
+    height: 300px;
+    background: url(boyimage/frag5.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.fragimage5:hover {
+    background: url(boyimage/frag55.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+}
+
+.description {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.price {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+/* FOOTER  */
+
+.footer {
+    background-color: rgb(248, 247, 247);
+    height: auto;
+    margin-top: 5%;
+}
+
+#coloum1,
+#coloum2,
+#coloum3,
+#coloum4 {
+    margin-top: 3%;
+}
+
+.text {
+    list-style-type: none;
+    font-weight: 350;
+    color: rgb(97, 97, 97);
+}
+
+.heading {
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.headings {
+    color: black;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#hr {
+    width: 85%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 2.8%;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-left: -5px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267B2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #E1306C;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #ff0101;
+
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: #fff;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #E1306C;
+}
+
+.wrapper .button:nth-child(4) span {
+    color: #333;
+}
+
+#footertag {
+    text-align: center;
+}
