@@ -14,8 +14,14 @@
     crossorigin="anonymous"></script>
 
 </head>
-
 <body>
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
   <div class="container-fluid">
 
     <div class="row">
@@ -88,8 +94,8 @@
           <img src="womenimage/6.1.webp" alt="" class="card-img">
           <div class="card-body">
             <h1 class="card-title">e-Shopify</h1>
-            <p class="card-sub-title">3 Pc Embroidered Cambric Suit With Silver Lawn Dupatta</p>
-            <a href="womencard.html"><button class="card-btn">view more</button></a>
+            <p class="card-sub-title"> <b>UN-STITCHED</b> </p>
+            <a href="womenunstiched.html"><button class="card-btn">view more</button></a>
 
           </div>
         </div>
@@ -100,7 +106,7 @@
           <img src="womenimage/5.1.webp" alt="" class="card-img">
           <div class="card-body">
             <h1 class="card-title">e-Shopify</h1>
-            <p class="card-sub-title">3 Pc Printed Cambric Suit With Doria Dupattay</p>
+            <p class="card-sub-title"> <b>STITCHED</b> </p>
             <a href="womencard.html"><button class="card-btn">view more</button></a>
 
           </div>
@@ -285,5 +291,12 @@
   </div>
 
 </body>
-
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+setTimeout(function() {
+    document.querySelector("body").classList.add("loaded");
+}, 10)
+});
+</script>

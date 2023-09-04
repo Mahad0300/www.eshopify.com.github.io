@@ -402,7 +402,7 @@
           </div>
 
           <div class="input-field button">
-            <input type="button" value="Login Now">
+            <input type="submit" value="Login Now">
           </div>
 
         </form>
@@ -420,7 +420,7 @@
       <div class="form signup">
         <span class="title">Registration</span>
 
-        <form action="#" name="fm" method="get">
+        <form action="#" name="fm" method="dialog">
           <table class="table">
 
             <tr>
@@ -449,7 +449,8 @@
             <tr>
               <td>
                 <div class="input-field button">
-                  <input type="button" value="Register Now" onclick="validate()">
+
+                  <input type="submit" value="Register Now" onclick="validate()">
                 </div>
               </td>
             </tr>
@@ -560,12 +561,14 @@
       document.getElementById("txtemail").style.borderColor = "black";
     }
     if (username.length != 0 && pattern_pass.test(pass) == true && pattern_email.test(email) == true) {
+      console.log('open popup')
       // window.location.href = "thankyou.html";
       popup.classList.add("open-popup");
 
     }
   }
   function closePopup() {
+    console.log('closed')
     popup.classList.remove("open-popup");
   }
 
