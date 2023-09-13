@@ -89,12 +89,13 @@
 
     .container-fluid {
       background-color: whitesmoke;
-
+      padding: 10px;
+      display: none;
     }
 
     .navone {
       display: flex;
-      margin-left: 10% !important;
+      margin-left: 13% !important;
     }
 
     .navone,
@@ -132,18 +133,16 @@
     /* NAVBAR  */
 
     .navbar {
-      font-weight: 500;
-      font-family: alata sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      letter-spacing: 2px;
     }
 
-
-
+    li:hover {
+      border-bottom: 1px solid #f9c922;
+    }
 
     /* featurepage  */
 
-    /* .p-4{
-      margin-left: -10%;
-    } */
     .card {
       border: none;
     }
@@ -245,30 +244,35 @@
       color: rgb(97, 97, 97);
     }
 
+
     .heading {
       color: black;
       font-size: 20px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: cursive;
     }
 
     .headings {
       color: black;
       font-size: 20px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: cursive;
+
     }
 
     #hr {
       width: 85%;
     }
 
-    #share ,#heart{
+    #share,
+    #heart {
       color: gray;
     }
-    #share:hover{
-    color: #FF9900;
+
+    #share:hover {
+      color: #FF9900;
     }
-    #heart:hover{
-    color: rgb(208, 1, 1);
+
+    #heart:hover {
+      color: rgb(208, 1, 1);
     }
 
 
@@ -368,9 +372,12 @@
       <div class="col-lg-8 col-md-8 col-sm-12">
         <div class="navone">
           <a href="">WELCOME</a>
-          <a href="">SIGN IN</a>
+          &nbsp;
+          &nbsp;
           <a href=""> <img class="flag" src="image/pakflag.png" alt=""> </a>
           <a href="">TRACKING INFO</a>
+          &nbsp;
+          &nbsp;
           <a href="">PKR V</a>
 
         </div>
@@ -381,12 +388,16 @@
       <div class="col-lg-4 col-md-4 col-sm-12">
         <div class="nav">
           <a href="loginsignup.html"><i class="fa-solid fa-user"></i></a>
+          &nbsp;
           <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
           &nbsp;
-          <a href=""><i class="fa-solid fa-magnifying-glass">&nbsp;</i> SEARCH</a>
+
+          <span><input style="width: 60%; height:30px; margin-top:-2%; " class="form-control me-2" type="search"
+              placeholder="Search" aria-label="Search"></span>
         </div>
       </div>
     </div>
+
   </div>
 
   <!-- brandlogo  -->
@@ -475,7 +486,8 @@
                     <span>XXL</span> </label>
                 </div>
                 <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add
-                    to cart</button> <i id="heart" class="fa fa-heart muted"></i> <i id="share" class="fa fa-share-alt muted"></i>
+                    to cart</button> <i id="heart" class="fa fa-heart muted"></i> <i id="share"
+                    class="fa fa-share-alt muted"></i>
                 </div>
               </div>
             </div>
@@ -492,9 +504,9 @@
     <div class="row justify-content-center ">
       <div id="coloum1" class="col-lg-3 col-md-6 col-sm-12 ">
         <ul class="text">
-          <li>
-            <h5 class="heading">NEED HELP?</h5>
-          </li>
+
+          <h5 class="heading">NEED HELP?</h5>
+
           <li>
             <p>+92 21 111 112 111 (9am - 10pm , Mon - Sat)</p>
             <p>eshopify.com</p>
@@ -506,9 +518,9 @@
       <div id="coloum2" class="col-lg-2 col-md-6 col-sm-12">
 
         <ul class="text">
-          <li>
-            <h5 class="heading">CUSTOMER SERVICE</h5>
-          </li>
+
+          <h5 class="heading">CUSTOMER SERVICE</h5>
+
           <li>Contact Us</li>
           <li>Delivery & Orders</li>
           <li>Returns & Exchanges</li>
@@ -522,9 +534,9 @@
 
       <div id="coloum3" class="col-lg-2 col-md-6 col-sm-12">
         <ul class="text">
-          <li>
-            <h5 class="heading">COMPANY</h5>
-          </li>
+
+          <h5 class="heading">COMPANY</h5>
+
           <li>About Us</li>
           <li>Careers</li>
           <li>Store locator</li>
@@ -536,9 +548,9 @@
 
       <div id="coloum4" class="col-lg-4 col-md-6 col-sm-12">
         <ul class="text">
-          <li>
-            <h5 class="headings">FOLLOW US</h5>
-          </li>
+
+          <h5 class="headings">FOLLOW US</h5>
+
         </ul>
 
         <div class="wrapper">
@@ -599,7 +611,7 @@
 
 
 
- 
+
 
 
 

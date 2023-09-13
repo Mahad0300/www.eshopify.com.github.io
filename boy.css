@@ -2,7 +2,10 @@
     .d-block {
         height: 27vh !important;
     }
-
+    .nav{
+        margin-top: 2% !important;
+        margin-left: 20% !important;
+       }
     .navbar-toggler {
         margin-top: -11%;
         margin-left: 78%;
@@ -38,7 +41,9 @@
     .navbar {
         margin-left: 7% !important;
     }
-
+    .nav{
+        margin-left: -10% !important;
+       }
     .navbar-toggler {
         margin-top: -11% !important;
         margin-left: 85%;
@@ -59,14 +64,13 @@
     margin: 0;
 }
 
-.container-fluid {
+.container-fluid{
     background-color: whitesmoke;
-    padding: 3px;
+    padding: 10px;
 }
-
-.navone {
+.navone{
     display: flex;
-    margin-left: 10% !important;
+    margin-left: 13% !important;
 }
 
 .navone,
@@ -103,10 +107,14 @@ a:hover {
 
 /* NAVBAR  */
 
-.navbar {
-    font-weight: 500;
-    font-family: alata sans-serif;
+.navbar{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
 }
+li:hover{
+    border-bottom: 1px solid #f9c922;
+}
+
 
 
 /* display  */
@@ -235,7 +243,8 @@ a:hover {
 #fraghead {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 
 #frag1 {
@@ -376,16 +385,18 @@ a:hover {
     color: rgb(97, 97, 97);
 }
 
+
 .heading {
     color: black;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive;
 }
 
 .headings {
     color: black;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive;
+
 }
 
 #hr {

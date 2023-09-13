@@ -6,13 +6,15 @@
         margin-top: -11%;
         margin-left: 78%;
        }
+       .nav{
+        margin-top: 2% !important;
+        margin-left: 20% !important;
+       }
        .brandlogo{
         margin-top: 5% !important;
         height: 3vh !important;
        }
-       /* .container-fluid{
-         display: none;
-       } */
+
        .kurti2{
         width: 100% !important;
        }
@@ -34,6 +36,9 @@
     .navbar{
        margin-left: 7% !important;
     }
+    .nav{
+        margin-left: -10% !important;
+       }
     .navbar-toggler{
         margin-top: -11% !important;
         margin-left: 85%;
@@ -76,11 +81,11 @@
 }
 .container-fluid{
     background-color: whitesmoke;
-    padding: 3px;
+    padding: 10px;
 }
 .navone{
     display: flex;
-    margin-left: 10% !important;
+    margin-left: 13% !important;
 }
 .navone , a{
     margin-left: 10px;
@@ -111,8 +116,11 @@ a:hover{
          /* NAVBAR  */
 
 .navbar{
-    font-weight: 500;
-    font-family: alata sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+}
+li:hover{
+    border-bottom: 1px solid #f9c922;
 }
 
         /* CAROUSEL */
@@ -157,6 +165,7 @@ a:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .shop{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
     margin-top: -30%;
@@ -169,6 +178,7 @@ a:hover{
     color:gray;
 }
 .now{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
     margin-top: -40%;
@@ -193,7 +203,8 @@ a:hover{
 #head {
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 
 #card1 , #card2 , #card3 ,#card4 , #card5 , #card6{
@@ -218,7 +229,7 @@ a:hover{
     background:url(image/card11.png);
     background-size:contain;
     background-repeat:no-repeat;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 .m_image2{
     width:300px;
@@ -233,7 +244,8 @@ a:hover{
     background:url(image/card22.webp);
     background-size:contain;
     background-repeat:no-repeat;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
+
 }
 .m_image3{
     width:300px;
@@ -248,7 +260,7 @@ a:hover{
     background:url(image/card33.png);
     background-size:contain;
     background-repeat:no-repeat;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 .m_image4{
     width:300px;
@@ -263,7 +275,7 @@ a:hover{
     background:url(image/card44.png);
     background-size:contain;
     background-repeat:no-repeat;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 .m_image5{
     width:300px;
@@ -278,7 +290,7 @@ a:hover{
     background:url(image/card55.png);
     background-size:contain;
     background-repeat:no-repeat;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 .m_image6{
     width:300px;
@@ -293,7 +305,7 @@ a:hover{
     background:url(image/card66.png);
     background-size:contain;
     background-repeat:no-repeat;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 .m_sale{
     background-color:#8f1e15;
@@ -349,13 +361,14 @@ a:hover{
 .heading {
     color: black;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive;
 }
 
 .headings {
     color: black;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: cursive;
+
 }
 
 #hr {
