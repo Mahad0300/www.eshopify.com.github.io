@@ -429,29 +429,24 @@
         <form action="#" name="fm" method="dialog">
           <table class="table">
 
-            <tr>
               <div class="input-field">
                 <input type="text" placeholder="Enter your name" id="txtname" name="txtname" required>
                 <i class="uil uil-user"></i>
               </div>
-            </tr>
 
-            <tr>
+              <tr>
               <div class="input-field">
                 <input type="email" placeholder="Enter your email" id="txtemail" name="txtemail" required>
                 <i class="uil uil-envelope"></i>
-                <span id="lb3"></span>
               </div>
+              <span id="lb3"></span>
             </tr>
 
-            <tr>
               <div class="input-field">
-                <input type="password" placeholder="Create a password" id="txtpass" name="txtpass" required>
+                <input type="password" placeholder="Create a password" id="txtpass" name="txtpass" >
                 <i class="uil uil-lock icon"></i>
-                <span id="lb2"></span>
               </div>
-            </tr>
-
+              <span id="lb2"></span>
             <tr>
               <td>
                 <div class="input-field button">
@@ -530,53 +525,57 @@
 
 
 
-  var popup = document.getElementById("popup");
-  function validate() {
-    var username = fm.txtname.value;
-    var pass = fm.txtpass.value;
-    var email = fm.txtemail.value;
-    if (username.length == 0) {
-      document.getElementById("txtname").style.borderBottomColor = "red";
-    }
-    else {
-      document.getElementById("txtname").style.borderBottomColor = "[4285F4]";
-    }
-    //-------------------------------- 
+  var popup= document.getElementById("popup");
+        function validate(){
+          var username=  fm.txtname.value;
+          var pass=  fm.txtpass.value;
+          var email=  fm.txtemail.value;
+          if(username.length == 0 )
+          {
+                document.getElementById("txtname").style.borderBottomColor = "red";
+          }
+          else{
+            document.getElementById("txtname").style.borderBottomColor = "[4285F4]";
+          }
+          //-------------------------------- 
+          var pattern_pass = /^[a-zA-Z]\w{3,14}$/;
+          if(pass.length == 0 )
+          {
+                document.getElementById("txtpass").style.borderBottomColor = "red";
+          }
+         
+          else if(pattern_pass.test(pass) == false)
+          {
+                document.getElementById("lb2").innerHTML = "1st letter must be alphabet and min length is 4 max is 14";
+          }
 
-    if (pass.length == 0) {
-      document.getElementById("txtpass").style.borderBottomColor = "red";
-    }
+          else{
+            document.getElementById("lb2").innerHTML = "";
+            document.getElementById("txtpass").style.borderBottomColor = "[4285F4]";
+          }
+          //--------------------------------
+          var pattern_email = /^([A-Za-z0-9_\-\.])+\@([A-Za-z])+\.([A-Za-z]{2,3})$/
+          if(email.length == 0 )
+          {
+                document.getElementById("txtemail").style.borderBottomColor = "red";
+          }
+          else if(pattern_email.test(email) == false)
+          {
+            document.getElementById("lb3").innerHTML = "Invalid Email";
+          }
+          else{
+            // document.getElementById("lb3").innerHTML = "";
+            document.getElementById("txtemail").style.borderBottomColor = "[4285F4]";
+          }
+          if(username.length != 0 &&  pattern_pass.test(pass) == true && pattern_email.test(email) == true)
+          {
+            // window.location.href = "thankyou.html";
+            popup.classList.add("open-popup");
 
-
-
-    else {
-
-      document.getElementById("lb2").innerHTML = "";
-      document.getElementById("txtpass").style.borderBottomColor = "[4285F4]";
-    }
-    //--------------------------------
-    var pattern_email = /^([A-Za-z0-9_\-\.])+\@([A-Za-z])+\.([A-Za-z]{2,3})$/
-    if (email.length == 0) {
-      console.log()
-      document.getElementById("txtemail").style.borderBottomColor = "red";
-    }
-    else if (pattern_email.test(email) == false) {
-      document.getElementById("lb3").innerHTML = "invalid email";
-    }
-    else {
-      document.getElementById("lb3").innerHTML = "";
-      document.getElementById("txtemail").style.borderBottomColor = "[4285F4]";
-    }
-    if (username.length != 0 && pattern_email.test(email) == true) {
-      console.log('open popup')
-      // window.location.href = "thankyou.html";
-      popup.classList.add("open-popup");
-
-    }
-  }
-  function closePopup() {
-    console.log('closed')
-    popup.classList.remove("open-popup");
-  }
+          }
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
 
 </script>
